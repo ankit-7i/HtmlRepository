@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Input Fields Demonstration</h1>
+    <p>This page demonstrates various HTML input fields without using a form element. while forms are typically used to submit data,input fields can be used independently for various UI interactions.</p>
+    <fieldset>
+        <legend>Text Input Types</legend>
+        <h3>Basic Text Input</h3>
+         Text Input: <input type="text" id="basic-text" placeholder="Enter some text">
+         <h3>Password Input</h3>
+         Password Input: <input type="password" id="password-input" placeholder="Enter  password">
+         <h3>Email Input</h3>
+         Email Input: <input type="email" id="email-input" placeholder="Enter email">
+         <h3>Search Input</h3>
+         Search Input: <input type="search" placeholder="search...">
+         <h3>URL Input</h3>
+         URL Input: <input type="url" name="" id="" placeholder="https://example.com">
+         <h3>Telephone Input</h3>
+         Telephone Input: <input type="tel" name="" id="" placeholder="(123)456-7890">
+    </fieldset>
+    <fieldset>
+        <legend>Numeric Input Types</legend>
+        <h3>Number Input</h3>
+        Number Input: <input type="number" name="" id="" placeholder="50">
+        <h3>Range Slider</h3>
+        Range Input(slider): <input type="range" value="">
+    </fieldset>
+    <fieldset>
+        <legend>Date and Time Input Types</legend>
+        <h3>Date Input</h3>
+        Date Input: <input type="date" name="" id="">
+        <h3>Time Input</h3>
+        Time Input: <input type="time" name="" id="">
+        <h3>DateTime-Local Input</h3>
+        DateTime-Local Input: <input type="datetime-local" name="" id="">
+        <h3>Month Input</h3>
+        Month Input: <input type="month" name="" id="">
+        <h3>Week Input</h3>
+        Week Input: <input type="week" name="" id="">
+    </fieldset>
+    <fieldset>
+        <legend>Selection Input Types</legend>
+        <h3>Checkbox Inputs</h3>
+        <ul type="none">
+        <li><input type="checkbox" name="" id=""> Reading</li>
+        <li><input type="checkbox" name="" id=""> sports </li> 
+        <li><input type="checkbox" name="" id=""> Music</li>
+    </ul>
+        <h3>Radio Button Inputs</h3>
+<ul type="none">
+        <li><input type="radio" name="Male"  value="gender"> Male</li>
+        <li><input type="radio" name="Female"  value="gender"> Female</li> 
+        <li><input type="radio" name="Other"  value="gender"> other </li>
+       </ul>
+        <h3>Color Picker</h3>
+        color Input : <input type="color" name="" id="">
+
+    </fieldset>
+    <fieldset>
+        <legend>Special Input Types</legend>
+        <h3>File Input</h3>
+        File Input: <input type="file" name="" id="">
+        <h3>Multiple File Input</h3>
+        Multiple File Input: <input type="file" name="" id="" multiple="multiple">
+        <h3>Hidden Input</h3>
+        <input type="hidden" name="">
+        <em>Note:There is a hidden inpput field above with value "hidden value" but it's not visible.</em>
+    </fieldset>
+    <fieldset>
+        <legend>input Attributes Demonstration</legend>
+        <h3>Requird Attribute</h3>
+        Required Input: <input type="tel" name="" id="" required placeholder="This field is required">
+        <h3>Readonly Attribute</h3>
+        Readonly Input: <input type="text" name="" id="" readonly placeholder="cannot be modified">
+        <h3>Diabled Attribute</h3>
+        Disabled Input: <input type="text" name="" id="" disabled placeholder="This field is disabled">
+        <h3>Pattern Attribute</h3>
+        Pattern Input: <input type="text" name="" id="" pattern="[0-9{3}]" placeholder="Enter 3 digit">
+        <h3>Autocomplete Attribute</h3>
+        Autocomplete Input: <input type="text" name="" id="" autocomplete="on" placeholder="try typing your name">
+        <h3>Autofocus Attribute</h3>
+        Autofocus Input: <input type="text" name="" id="" autofocus placeholder="This field will be focused">
+    </fieldset>
+    <fieldset>
+        <legend>Related Output Elements</legend>
+        <h3>Output Element</h3>
+        <input type="text" name="" id=""> + <input type="text" name="" id=""> = 
+        <h3>Prgress Element</h3>
+        <label for="file">Download progress:</label>
+
+<progress id="file" max="100" value="70">70%</progress>
+
+
+        <h3>Meter Element</h3>
+        <label for="fuel">Disk:</label>
+
+<meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="75">
+  at 75%
+</meter>
+    </fieldset>
+    <em>Note: Normally,these input fields would be wrapped in a form element with a submit button to send the data to a server. these inputs still provides interactive elements but don't built-in submission mechanism. </em>
+</body>
+</html>
