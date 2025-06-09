@@ -3,120 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Forms Demonstration</title>
 </head>
 <body>
-    <h1>Demonstrating Fieldsets with Tables</h1>
-<form>
+    <h1>HTML Forms Demonstration</h1>
+    <h3>1.Contact Form</h3>
     <fieldset>
         <legend>Personal Information</legend>
-        <table border="1">
-            <tr>
-                <th colspan="3">Contact Details</th>
-            </tr>
-            <tr>
-                <td>First Name:</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Last Name:</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td><input type="email"></td>
-            </tr>
-            <tr>
-                <td>Phone:</td>
-                <td><input type="text"></td>
-            </tr>
-        </table>
-    </fieldset>
-    
-    <fieldset>
-        <legend>Address Information</legend>
-        <table border="1">
-            <tr>
-                <th colspan="3">Mailing Address</th>
-            </tr>
-            <tr>
-                <td>Street:</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>City:</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>State/Province:</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Postal code:</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Country</td>
-                <td><input type="text"></td>
-            </tr>
-        </table>
-    </fieldset>
-    
-    <fieldset>
-        <legend>Employment History</legend>
         <br>
-        <h4>Please list your last 2 employers:</h4>
-        <table border="1">
-            <tr>
-                <th colspan="3">Most Recent Employer</th>
-            </tr>
-            <tr>
-                <td>Company Name:</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Position:</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Years Employed</td>
-                <td><input type="number"></td>
-            </tr>
-        </table>
+        Full Name: <input type="text" placeholder="John Doe"  required>
+        <br><br>
+        Email Address: <input type="email" placeholder="example@domain.com" required>
+        <br><br>
+        Phone Number: <input type="tel" placeholder="123-456-7890" required>
+        <br><br>
+        Your Message:
         <br>
-        <table border="1">
-            <tr>
-                <th colspan="3">Previous Employer</th>
-            </tr>
-            <tr>
-                <td>Company Name:</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Position:</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Years Employed</td>
-                <td><input type="number"></td>
-            </tr>
-        </table>
+        <Textarea placeholder="Type Your Message here"></Textarea>
+        <br>
+        <br>
+        <input type="checkbox" name="" id=""> Subscribe to our newsletter
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear form" >
+    </fieldset>
+    <h3>2.User Registration Form</h3>
+    <fieldset>
 
-    </fieldset>
-    <fieldset>
-        <legend>Submit Application</legend>
-        <table border="1">
-            <tr>
-                <td><input type="checkbox"> I certify that all information Provided is correct</td>
-            </tr >
+        <legend>Create Account</legend>
+        <br>
+        Username : <input type="text" name="" id="" required>
+        <br><br>
+        password : <input type="password" name="" id="" required>
+        <br><br>
+        Confirm Password : <input type="password" name="" id="" required>
+        <br><br>
+        Date of Birth : <input type="date" name="" id="" required>
+        <br><br>
+        Gender:
+        <ul type="none">
+            <li> <input type="radio" name="Gender" value="m"> Male</li>
+            <li> <input type="radio" name="Gender" value="f"> Female</li>
+            <li> <input type="radio" name="Gender" value="o"> Other</li>
+        </ul>
+        <br>
+        Country: <select name="" id="" placeholder="--Select Country--">
+            <option value="">-- Select Country -- </option>
+            <option value="">Australia</option>
+            <option value="">England</option>
+            <option value="">India</option>
+            <option value="">New Zealand</option>
+            <option value="">South Africa</option>
+             </select>
+             <br><br>
+             <input type="checkbox" name="" id=""> I agree to  the <a href="">Terms and Conditions </a>
+             <br><br>
+             <input type="button" value="Register">
              
-                <td align="center">
-                    <input type="submit" >   
-                    <input type="reset" >         
-            </td>
-            
-        </table>
     </fieldset>
-    </form>
+    <h3>3. Customer Feedback Survey</h3>
+    <fieldset>
+        <legend>Survey information</legend>
+        <br>
+         How satisfied are you with our service?
+         <br>
+        <input type="range" value="" r>
+
+       <br><br>
+       which products have you used ? (select all that apply)
+       <br>
+       <ul type="none">
+        <li> <input type="checkbox" name="" id=""> Product A</li>
+        <li><input type="checkbox" name="" id=""> Product B</li>
+        <li><input type="checkbox" name="" id=""> Product C</li>
+        <li><input type="checkbox" name="" id=""> Product D</li>
+       </ul>
+       <br>
+       How Often do you use our service?
+       <br>
+       <select>
+        <option value="">--Please Select--</option>
+        <option value="">Frequently</option>
+        <option value="">Once used</option>
+        <option value="">Not used</option>
+       </select>
+       <br><br>
+       Do you have any suggestions for improvement?
+       <br>
+       <textarea name="" id=""></textarea>
+       <br><br>
+       How likely are you to recommend us?
+       <ul type="none">
+        <li><input type="radio" name="a" value="g">Very likely</li>
+        <li><input type="radio" name="a" value="h">Likely</li>
+        <li><input type="radio" name="a" value="i">Neutral</li>
+        <li><input type="radio" name="a" value="j">unlikely</li>
+        <li><input type="radio" name="a" value="k">Very unlikely</li>
+       </ul>
+       <br>
+       <input type="submit" value="Submit Survey" >
+    </fieldset>
+   
+
+    
 </body>
 </html>
