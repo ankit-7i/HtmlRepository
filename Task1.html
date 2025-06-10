@@ -6,51 +6,139 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Demonstration of HTML phrase Tags</h1>
-    <br><br>
-    <em>Emphasized text</em>:This text is emphasized using the tag.
-    <br><br>
-    <strong>Strong Text</strong>:This text is strong using the tag.
-    <br><br>
-    <abbr>Hyper Text markup language</abbr>: The tag is used to define an abbreviation.
-    <br><br>
-    <cite>Cited work</cite>:The tag is used to referance the title of a work.
-    <br><br>
-    <dfn>Defination term</dfn>:This is the first occurance of a term,defined using the tag.
-    <br><br>
-    <mark>Highlighted text</mark>:The tag is used to highlight text.
-    <br><br>
-    <small>small text</small>:This text is smaller than normal text size 
-    <br><br>
-    <strike>Deleted Text</strike>:The text has been deleted using the tag.
-    <br><br>
-    <u>Inserted text</u>:This text has been inserted using the tag.
-    <br><br>
-    <sub>Subscripted text</sub>:This is subscrpted text.
-    <br><br>
-    <sup>Superscripted text</sup>:This is superscript text.
-    <br><br>
-    <q>inline quotation</q>:This is an inline quotation.
-    <br><br>
-    <code>code</code>:This text is displayed in a monospace font using the tag.
-    <br><br>
-    <var>Variable</var>:This text represents a variable using the tag.oftern used in mathematical expression or programming.
-    <br><br>
-    <kbd>Keyboard Input</kbd>:This text represnts keyboard input using the tag.
-    <br><br>
-    <bold>Bold Text</bold>:This text id bolded using the tag.
-    <br><br>
-    <i>Italic Text</i>:This text is italicized using the tag.
-    <br><br>
-    <samp>Sample Ouput</samp>:This text represents sample output using the tag.
-    <br><br>
-    <u>Underlined text</u>:This text is underlined using the tag.
-    <br><br>
-    <del>Deleted Text</del>:This text has been deleted.
-    <br><br>
-    <ins>Input text</ins>:This is the input text.
-    <br><br>
-    <u>Underliend text</u>:The text is underlined text using the tag. 
-    
+    <form>
+    <h2>1. Software Training instititute Registration Form</h2>
+    <fieldset>
+        <legend>
+            Personal Details
+        </legend>
+        Full Name : <input type="text" name="" id="">
+        <br><br>
+        Email Address : <input type="email" name="" id="">
+        <br><br>
+        Phone Number : <input type="tel" name="" id="">
+        <br><br>
+        Highest Educational Qualification : <select>
+            <option value="">-- Select Education level --</option>
+            <option value="">Post Graduation</option>
+            <option value="">Under Graduation</option>
+        </select>
+        <br><br>
+        Employment Status:
+        <ul type="none">
+            <li><input type="radio" name="c" value="a">Student</li>
+            <li><input type="radio" name="d" value="a">Employed</li>
+            <li><input type="radio" name="e" value="a">Unemployed</li>
+            <li><input type="radio" name="f" value="a">self-employed</li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>Course Selection</legend>
+        <br>
+        Course Category : <select>
+            <option value="">-- Select Category --</option>
+            <option value="">Placement Assitance</option>
+            <option value="">Normal</option>
+            <option value="">Work Shop</option>
+        </select>
+        <br><br>
+        Specific Course : <select name="" id="">
+            <option value="">-- First Select a Category --</option>
+            <option value="">Online</option>
+            <option value="">Offline</option>
+        </select>
+        <br><br>
+        Course Level :
+        <br>
+        <select name="" id="">
+            <option value="">-- Select Level --</option>
+            <option value="">Begineer</option>
+            <option value="">Intermediate</option>
+            <option value="">Pro</option>
+        </select>
+        <br><br>
+        Preferred Batch Timming :
+        <br>
+        <select name="" id="">
+            <option value="">-- Select Timing --</option>
+            <option value="">11.00 AM</option>
+            <option value="">01.00PM</option>
+        </select>
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Technical Background</legend>
+        <br>
+        Programming Language known (Select all that apply) :
+        <br>
+        <input type="checkbox" name="" id=""> Java
+        <br>
+        <input type="checkbox" name="" id=""> Python
+        <br>
+        <input type="checkbox" name="" id=""> JavaScript
+        <br>
+        <input type="checkbox" name="" id=""> C# 
+        <br>
+        <input type="checkbox" name="" id=""> C++
+        <br>
+        <input type="checkbox" name="" id=""> PHP
+        <br>
+        <input type="checkbox" name="" id=""> Ruby
+        <br>
+        <input type="checkbox" name="" id=""> Other 
+        <br><br>
+        Years of Programming Experience : <input type="number" name="" id="">
+        <br><br>
+        Technical Background:
+        <br>
+        <textarea name="" id="" placeholder="Briefly describe your technical background or experience..."></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Payment Details</legend>
+        <br>
+        Payment Method:
+        <br>
+        <input type="radio" name="s" value="p"> Credit Card
+        <br>
+        <input type="radio" name="t" value="p"> Debit Card
+        <br>
+        <input type="radio" name="u" value="p"> Bank Transfer
+        <br>
+        <input type="radio" name="v" value="p"> PayPal 
+        <br><br>
+        Payment Plan:
+        <br>
+        <select name="" id="">
+            <option value="">-- Select Payment Plan --</option>
+            <option value="">EMI</option>
+            <option value="">Full Payment</option>
+        </select>
+        <br><br>
+        <input type="checkbox" name="" id=""> Apply for Early Bird Discount(if available)
+    </fieldset>
+    <fieldset>
+        <legend>Additional Information</legend>
+        <br>
+        How did you hear about us? 
+        <select name="" id="">
+            <option value="">-- Select Option --</option>
+            <option value="">Social Media</option>
+            <option value="">Website</option>
+            <option value="">Friends</option>
+            <option value="">Other Platform</option>
+        </select>
+        <br><br>
+        What are your learning goals?
+        <br>
+        <textarea name="" id="" placeholder="Describe what you hope to achieve through this training..."></textarea>
+        <br>
+        <input type="checkbox" name="" id=""> Subscribe to our newsletter for latest updates on new courses and offers
+        <br>
+        <input type="checkbox" name="" id=""> I agree to the terms and conditions
+    </fieldset>
+    <br>
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear Form">
+    </form>
 </body>
 </html>
